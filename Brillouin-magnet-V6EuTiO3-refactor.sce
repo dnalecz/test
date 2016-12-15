@@ -1,5 +1,5 @@
 clear // Brilouin-magnet V6 04-02-15 refactor
-        // E:\PROGRAMY-Dawid\ 3/06.16 dodaje external field Bex
+      // 
 function M=f(m,T,Bex)
 J=7/2;
 N=1;      g=2;
@@ -31,7 +31,7 @@ w(x,3)=w(x,2)*w(x,2);
 end
 
 for x=1:iter-1
-w(x,4)=-(w(x+1,3)-w(x,3))/(w(x+1,1)-w(x,1))*(Lam/2 *8.31); //pochodna * Lam/2 dlaczego nie wiem                           // nie dziala w poluzew
+w(x,4)=-(w(x+1,3)-w(x,3))/(w(x+1,1)-w(x,1))*(Lam/2 *8.31); //pochodna * Lam/2 dlaczego nie wiem    // nie dziala w polu zew
 w(x,5)=w(x,4)/w(x,1); // c/T ??                     // niezalezne od g zawsze 2
 end
 
@@ -57,11 +57,3 @@ plot(w(:,1),w(:,5),"+b")
 subplot(2,2,4); 
 title('Entropy [R]'); 
 plot(w(:,1),w(:,7),"+b")
-w(:,7)
-log(8)
-
-
-
-
-
-
